@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management | Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <label for="first-name">
+                <span class="details">First Name</span>
+              </label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="last-name">
+                <span class="details">Last Name</span>
+              </label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email-add">
+                <span class="details">E-mail</span>
+              </label>
+              <input
+                type="email"
+                id="email-add"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="phone-no">
+                <span class="details">Phone Number</span>
+              </label>
+              <input
+                type="text"
+                id="phone-no"
+                placeholder="Enter your number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="date-join">
+                <span class="details">Date of Join</span>
+              </label>
+              <input type="date" id="date-join" required />
+            </div>
+            <div class="input-box">
+              <label for="emp-dept">
+                <span class="details">Department</span>
+              </label>
+              <select name="department" id="emp-dept">
+                <option value="technical">Technical</option>
+                <option value="non-technical">Non-Technical</option>
+                <option value="sales">sales</option>
+                <option value="hr">HR</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="emp-salary">
+                <span class="details">Salary</span>
+              </label>
+              <input
+                type="text"
+                id="emp-salary"
+                placeholder="Salary in LPA"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="emp-exp">Experience</label>
+              <select name="experience" id="emp-exp">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="emp-qualification">
+                <span class="details">Qualification</span>
+              </label>
+              <input
+                type="text"
+                id="emp-qualification"
+                placeholder="Degree"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="univ-coll">
+                <span class="details">University/College</span>
+              </label>
+              <input
+                type="text"
+                id="univ-coll"
+                placeholder="University/College last attended"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="gpa">
+                <span class="details">Percentage/GPA</span>
+              </label>
+              <input type="text" id="gpa" />
+            </div>
+            <div class="input-box">
+              <label for="completion-year">
+                <span class="details">Completion Year</span>
+              </label>
+              <input type="text" id="completion-year" placeholder="eg: 2002" />
+            </div>
+          </div>
+          <div class="input-add">
+            <label for="emp-address">
+              <span class="details">Address</span>
+            </label>
+            <textarea
+              name="address"
+              id="emp-address"
+              cols="30"
+              rows="10"
+              placeholder="Enter your current/permanent address"
+              required
+            ></textarea>
+          </div>
+          <div class="status">
+            <div class="input-box">
+              <label for="emp-status">
+                <span class="details">Status</span>
+              </label>
+              <select name="status" id="emp-status">
+                <option value="active" selected>Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
