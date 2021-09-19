@@ -9,7 +9,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="title">Registration</div>
+      <div class="form-top">
+        <div class="title">Registration</div>
+        <div class="view-emp-btn">
+          <a href="../table/index.html">View Employee records</a>
+        </div>
+      </div>
       <div class="content">
         <form action="#">
           <div class="user-details">
@@ -18,6 +23,8 @@
                 <span class="details">First Name</span>
               </label>
               <input
+                autocomplete
+                name="firstName"
                 type="text"
                 id="first-name"
                 placeholder="Enter your first name"
@@ -29,6 +36,8 @@
                 <span class="details">Last Name</span>
               </label>
               <input
+                autocomplete
+                name="lastName"
                 type="text"
                 id="last-name"
                 placeholder="Enter your last name"
@@ -40,6 +49,8 @@
                 <span class="details">E-mail</span>
               </label>
               <input
+                autocomplete
+                name="emailID"
                 type="email"
                 id="email-add"
                 placeholder="Enter your email address"
@@ -51,6 +62,8 @@
                 <span class="details">Phone Number</span>
               </label>
               <input
+                autocomplete
+                name="contactNo"
                 type="text"
                 id="phone-no"
                 placeholder="Enter your number"
@@ -61,7 +74,13 @@
               <label for="date-join">
                 <span class="details">Date of Join</span>
               </label>
-              <input type="date" id="date-join" required />
+              <input
+                autocomplete
+                name="dateOfJoin"
+                type="date"
+                id="date-join"
+                required
+              />
             </div>
             <div class="input-box">
               <label for="emp-dept">
@@ -79,6 +98,8 @@
                 <span class="details">Salary</span>
               </label>
               <input
+                autocomplete
+                name="salary"
                 type="text"
                 id="emp-salary"
                 placeholder="Salary in LPA"
@@ -97,6 +118,8 @@
                 <span class="details">Qualification</span>
               </label>
               <input
+                autocomplete
+                name="highestQualification"
                 type="text"
                 id="emp-qualification"
                 placeholder="Degree"
@@ -108,6 +131,8 @@
                 <span class="details">University/College</span>
               </label>
               <input
+                autocomplete
+                name="university"
                 type="text"
                 id="univ-coll"
                 placeholder="University/College last attended"
@@ -118,13 +143,19 @@
               <label for="gpa">
                 <span class="details">Percentage/GPA</span>
               </label>
-              <input type="text" id="gpa" />
+              <input autocomplete name="gpa" type="text" id="gpa" />
             </div>
             <div class="input-box">
               <label for="completion-year">
                 <span class="details">Completion Year</span>
               </label>
-              <input type="text" id="completion-year" placeholder="eg: 2002" />
+              <input
+                autocomplete
+                name="completionYear"
+                type="text"
+                id="completion-year"
+                placeholder="eg: 2002"
+              />
             </div>
           </div>
           <div class="input-add">
@@ -145,14 +176,14 @@
               <label for="emp-status">
                 <span class="details">Status</span>
               </label>
-              <select name="status" id="emp-status">
-                <option value="active" selected>Active</option>
-                <option value="inactive">Inactive</option>
+              <select name="isActive" id="emp-status">
+                <option value="true" selected>Active</option>
+                <option value="false">Inactive</option>
               </select>
             </div>
           </div>
-          <div class="button">
-            <input type="submit" value="Register" />
+          <div class="button-register">
+            <input id="formButton" type="submit" value="Register" />
           </div>
         </form>
       </div>

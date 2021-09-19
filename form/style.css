@@ -32,6 +32,25 @@ body {
   position: relative;
 }
 
+.view-emp-btn {
+  margin: 10px 0 5px 0;
+}
+
+.view-emp-btn a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2em;
+  color: black;
+  padding: 4px;
+}
+
+.view-emp-btn a:hover {
+  background: linear-gradient(135deg, #28b487, #7dd56f);
+  color: #fff;
+}
+
 .content form .user-details {
   display: flex;
   flex-wrap: wrap;
@@ -111,12 +130,12 @@ form .input-box span.details {
   border-color: #28b487;
 }
 
-form .button {
+form .button-register {
   height: 45px;
   margin: 35px 0;
 }
 
-form .button input {
+form .button-register input {
   height: 100%;
   width: 100%;
   border-radius: 5px;

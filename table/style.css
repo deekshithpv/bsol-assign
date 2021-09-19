@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.styled-header {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: -2px;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+}
+
+.new-emp-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.new-emp-btn a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2em;
+  color: black;
+  padding: 4px;
+}
+
+.new-emp-btn a:hover {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+#tbl {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  font-family: "Barlow", sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#tbl thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+#tbl tbody td {
+  text-align: center;
+}
+
+#tbl th {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+}
+
+#tbl th,
+#tbl td {
+  padding: 12px 15px;
+}
+
+#tbl tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+#tbl tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+#tbl tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+#tbl button {
+  margin: 5px;
+}
